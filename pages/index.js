@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import logo from "../public/assets/logo.png";
 import Carrousel from "../components/Carrousel";
 
-
 import project1 from "../public/assets/project-1.png";
 import project2 from "../public/assets/project-2.png";
 import project3 from "../public/assets/project-3.png";
@@ -14,6 +13,9 @@ import project6 from "../public/assets/project-6.png";
 import project7 from "../public/assets/project-7.png";
 import project8 from "../public/assets/project-8.png";
 import GoogleMaps from "../components/Map";
+import ReactPlayer from "react-player";
+import { useState, useEffect } from "react";
+import YouTube from "react-youtube";
 
 const SLIDE_COUNT = 3;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
@@ -30,6 +32,21 @@ const galleryProjects = [
 ];
 
 export default function Home() {
+  const [isSSR, setIsSSR] = useState(true);
+
+  useEffect(() => {
+    setIsSSR(false);
+  }, []);
+
+  const opts = {
+    height: "390",
+    width: "640",
+    playerVars: {
+      autoplay: 1,
+      origin: "http://localhost:3000/",
+    },
+  };
+
   return (
     <div>
       <Head>
@@ -123,6 +140,31 @@ export default function Home() {
                 );
               })}
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-4">
+        <div className="wrapper-container">
+          <div className="aspect-w-16 aspect-h-9">
+            {isSSR ? null : (
+              <ReactPlayer height={'100%'} width="100%"
+                url={"https://www.youtube.com/watch?v=XUXm_3WOss4"}
+                config={{
+                  youtube: {
+                    embedOptions: {
+                      height: "100%",
+                      width: "100%",
+                    },
+                    playerVars: {
+                      autoplay: 1,
+                      height: "100%",
+                      width: "100%",
+                    },
+                  },
+                }}
+              />
+            )}
           </div>
         </div>
       </div>

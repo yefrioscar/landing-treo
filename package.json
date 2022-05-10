@@ -13,8 +13,11 @@
     "embla-carousel-react": "^6.2.0",
     "next": "12.1.5",
     "react": "18.1.0",
+    "react-alice-carousel": "^2.6.0",
     "react-dom": "18.1.0",
+    "react-modal-image": "^2.5.0",
     "react-player": "^2.10.0",
+    "react-touch-carousel": "^0.10.2",
     "react-youtube": "^9.0.1"
   },
   "devDependencies": {

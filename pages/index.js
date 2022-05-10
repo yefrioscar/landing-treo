@@ -4,32 +4,15 @@ import styles from "../styles/Home.module.css";
 import logo from "../public/assets/logo.png";
 import Carrousel from "../components/Carrousel";
 
-import project1 from "../public/assets/project-1.png";
-import project2 from "../public/assets/project-2.png";
-import project3 from "../public/assets/project-3.png";
-import project4 from "../public/assets/project-4.png";
-import project5 from "../public/assets/project-5.png";
-import project6 from "../public/assets/project-6.png";
-import project7 from "../public/assets/project-7.png";
-import project8 from "../public/assets/project-8.png";
 import GoogleMaps from "../components/Map";
 import ReactPlayer from "react-player";
 import { useState, useEffect } from "react";
 import YouTube from "react-youtube";
+import Gallery from "../components/Gallery";
+import ModalImage, { Lightbox } from "react-modal-image";
 
 const SLIDE_COUNT = 3;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
-
-const galleryProjects = [
-  project1,
-  project2,
-  project3,
-  project4,
-  project5,
-  project6,
-  project7,
-  project8,
-];
 
 export default function Home() {
   const [isSSR, setIsSSR] = useState(true);
@@ -117,7 +100,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mb-4">
+      {/* <div className="mb-4">
         <div className="wrapper-container">
           <div className="bg-gray-900 rounded-md p-6">
             <span className="font-medium text-4xl mb-1 text-white">03</span>
@@ -142,13 +125,52 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className="mb-4">
+        <div className="wrapper-container">
+          <div className="bg-gray-900 rounded-md p-6">
+            <span className="font-medium text-4xl mb-1 text-white">03</span>
+            <h3 className="text-gray-400 font-medium text-xl mb-4">
+              Proyectos
+            </h3>
+            <Gallery />
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-4">
+        <div className="wrapper-container">
+          <div className="bg-amber-500 rounded-md p-6">
+            <span className="font-medium text-4xl mb-1 text-white">04</span>
+            <h3 className="text-amber-700 font-medium text-xl mb-4">
+              Equipos y Certificaciones
+            </h3>
+            <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
+              <div>
+                <ModalImage
+                  small="assets/maquinaria.png"
+                  large="assets/maquinaria.png"
+                />
+              </div>
+              <div>
+              <ModalImage
+                  small="assets/SCE.png"
+                  large="assets/SCE.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="mb-4">
         <div className="wrapper-container">
           <div className="aspect-w-16 aspect-h-9">
             {isSSR ? null : (
-              <ReactPlayer height={'100%'} width="100%"
+              <ReactPlayer
+                height={"100%"}
+                width="100%"
                 url={"https://www.youtube.com/watch?v=XUXm_3WOss4"}
                 config={{
                   youtube: {

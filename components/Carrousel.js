@@ -5,7 +5,7 @@ import { mediaByIndex } from "../utils/media";
 import media2 from "../utils/media/media-1.jpeg";
 
 const Carrousel = ({ slides }) => {
-  const [viewportRef, embla] = useEmblaCarousel({ loop: false });
+  const [viewportRef, embla] = useEmblaCarousel({ loop: true, speed: 1000 });
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
 
@@ -28,7 +28,7 @@ const Carrousel = ({ slides }) => {
       <div className="overflow-hidden rounded-md w-full" ref={viewportRef}>
         <div className="flex -ml-3 select-auto">
           {slides.map((index) => (
-            <div className="relative min-w-full pl-3" key={index}>
+            <div className="relative min-w-full w-28 pl-3" key={index}>
               <div className="relative overflow-hidden h-52 md:h-72 rounded-md">
                 <img
                   className="absolute block top-1/2 left-1/2 w-auto min-h-full min-w-full max-w-none -translate-x-1/2 -translate-y-1/2"
@@ -38,8 +38,9 @@ const Carrousel = ({ slides }) => {
               </div>
               <div className="absolute top-0 left-0 ml-3 bg-gradient-to-r from-black w-full h-full p-4 flex items-center">
                 <p className="text-white font-bold text-4xl">
-                  Explotacion de <br></br> Minas <br></br> y <br></br> Canteras
+                 MOVIMIENTO DE TIERRA <br></br> OBRAS CIVILES <br></br> EXPLOTACIÓN DE MINAS Y CANTEAS <br></br> ALCANTARILLADO Y SANEAMIENTO
                 </p>
+
               </div>
             </div>
           ))}

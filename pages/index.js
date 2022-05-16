@@ -14,6 +14,11 @@ import ModalImage, { Lightbox } from "react-modal-image";
 const SLIDE_COUNT = 3;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
+import project1 from "../public/assets/project-1.png";
+import project2 from "../public/assets/project-2.png";
+import project3 from "../public/assets/project-3.png";
+import project4 from "../public/assets/project-4.png";
+
 export default function Home() {
   const [isSSR, setIsSSR] = useState(true);
 
@@ -61,27 +66,47 @@ export default function Home() {
 
       <div className="mb-4">
         <div className="wrapper-container">
-          <div className="bg-red-500 rounded-md p-6">
+          <div className=" rounded-md">
             <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
-              <div className="w-full">
-                <span className="font-medium text-4xl mb-1 text-white">01</span>
+              <div className="w-full p-6 rounded-md bg-red-500 h-max">
+                <input
+                  type="checkbox"
+                  id="chck2"
+                  className="absolute opacity-0 -z-10"
+                />
+                <label
+                  className="font-medium text-4xl mb-1 text-white accor-title flex justify-between"
+                  htmlFor="chck2"
+                >
+                  01
+                </label>
                 <h2 className="font-medium text-xl mb-4 text-red-800">
                   Quienes somos?
                 </h2>
-                <p className="text-white w-3/4">
+                <div className="text-white accord-content">
                   INVERSIONES TREO S.A.C. comienza sus operaciones a nivel
                   nacional en el año 2006, ofreciendo a sus clientes una mejora
                   en las operaciones, mediante la implementación de su moderna
                   flota de volquetes, Semi Trailer, equipos, maquinaria pesada y
                   personal técnico calificado.
-                </p>
+                </div>
               </div>
-              <div className="w-full">
-                <span className="font-medium text-4xl mb-1 text-white">02</span>
+              <div className="w-full p-6 rounded-md  bg-red-500 h-max">
+                <input
+                  type="checkbox"
+                  className="absolute opacity-0 -z-10"
+                  id="chck3"
+                />
+                <label
+                  className="font-medium text-4xl mb-1 text-white accor-title flex justify-between"
+                  htmlFor="chck3"
+                >
+                  02
+                </label>
                 <h2 className="font-medium text-xl mb-4 text-red-800">
                   Que servicios brindamos?
                 </h2>
-                <ul className=" list-inside list-disc text-white">
+                <ul className=" list-inside list-disc text-white accord-content">
                   <li>Explotación de Minas y Canteras.</li>
                   <li>
                     Encauzamiento de ríos; habilitación de laderas y enrocados.
@@ -128,13 +153,296 @@ export default function Home() {
       </div> */}
 
       <div className="mb-4">
-        <div className="wrapper-container">
-          <div className="bg-gray-900 rounded-md p-6">
+        <div className="bg-neutral-900">
+          <div className="wrapper-container p-6 py-20">
             <span className="font-medium text-4xl mb-1 text-white">03</span>
-            <h3 className="text-gray-400 font-medium text-xl mb-4">
+            <h3 className="text-gray-400 font-medium text-xl mb-16">
               Proyectos
             </h3>
-            <Gallery />
+            {/* <Gallery /> */}
+            <div className="flex mb-24">
+              <div className="w-1/2 translate-y-14">
+                <span className="font-serif font-bold text-4xl text-gray-600">
+                  I
+                </span>
+                <div>
+                  <div className="flex items-center space-x-2 mb-4">
+                    <h6 className="font-medium text-xl text-red-500">
+                      PALTARUMI S.A.C.
+                    </h6>
+                    <span className="font-medium text-xs text-neutral-400">
+                      PRIVADO
+                    </span>
+                  </div>
+                  <p className="text-base text-white w-11/12 mb-5">
+                    Obras Civiles (Estructuras para Tanques - Construcción de
+                    Oficinas – Dormitorios –Campamentos–Laboratorios)
+                  </p>
+
+                  <span className="text-neutral-500">Paramonga - Lima</span>
+                </div>
+              </div>
+
+              <div className="  mb-4 flex space-x-4  w-1/2 justify-center">
+                <div className="space-y-4 ">
+                  <div className="flex justify-end items-end">
+                    <Image
+                      src={project1}
+                      alt="Proyecto1"
+                      width={140}
+                      height={90}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className="w-52 h-32">
+                    <Image
+                      src={project2}
+                      alt="Proyecto1"
+                      width={208}
+                      height={128}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                </div>
+                <div className="space-y-4 translate-y-14 ">
+                  <div className="w-52 h-32">
+                    <Image
+                      src={project3}
+                      alt="Proyecto1"
+                      width={208}
+                      height={128}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className="flex justify-start items-start">
+                    <Image
+                      src={project4}
+                      alt="Proyecto1"
+                      width={140}
+                      height={90}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex mb-24">
+              <div className="  mb-4 flex space-x-4  w-1/2 justify-center">
+                <div className="space-y-4 ">
+                  <div className="flex justify-end items-end">
+                    <Image
+                      src={project1}
+                      alt="Proyecto1"
+                      width={140}
+                      height={90}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className="w-52 h-32">
+                    <Image
+                      src={project2}
+                      alt="Proyecto1"
+                      width={208}
+                      height={128}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                </div>
+                <div className="space-y-4 translate-y-14 ">
+                  <div className="w-52 h-32">
+                    <Image
+                      src={project3}
+                      alt="Proyecto1"
+                      width={208}
+                      height={128}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className="flex justify-start items-start">
+                    <Image
+                      src={project4}
+                      alt="Proyecto1"
+                      width={140}
+                      height={90}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="w-1/2 translate-y-14 flex flex-col justify-center items-end">
+                <span className="font-serif font-bold text-4xl text-gray-600">
+                  II
+                </span>
+                <div className="flex flex-col justify-center items-end">
+                  <div className="flex items-center space-x-2 mb-4">
+                  <span className="font-medium text-xs text-neutral-400">
+                      PRIVADO
+                    </span>
+                    <h6 className="font-medium text-xl text-red-500 ">
+                      PALTARUMI S.A.C.
+                    </h6>
+
+                  </div>
+                  <p className="text-base text-white w-11/12 mb-5 text-right">
+                    Obras Civiles (Estructuras para Tanques - Construcción de
+                    Oficinas – Dormitorios –Campamentos–Laboratorios)
+                  </p>
+
+                  <span className="text-neutral-500">Paramonga - Lima</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex mb-24">
+              <div className="w-1/2 translate-y-14">
+                <span className="font-serif font-bold text-4xl text-gray-600">
+                  III
+                </span>
+                <div>
+                  <div className="flex items-center space-x-2 mb-4">
+                    <h6 className="font-medium text-xl text-red-500">
+                      PALTARUMI S.A.C.
+                    </h6>
+                    <span className="font-medium text-xs text-neutral-400">
+                      PRIVADO
+                    </span>
+                  </div>
+                  <p className="text-base text-white w-11/12 mb-5">
+                    Obras Civiles (Estructuras para Tanques - Construcción de
+                    Oficinas – Dormitorios –Campamentos–Laboratorios)
+                  </p>
+
+                  <span className="text-neutral-500">Paramonga - Lima</span>
+                </div>
+              </div>
+
+              <div className="  mb-4 flex space-x-4  w-1/2 justify-center">
+                <div className="space-y-4 ">
+                  <div className="flex justify-end items-end">
+                    <Image
+                      src={project1}
+                      alt="Proyecto1"
+                      width={140}
+                      height={90}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className="w-52 h-32">
+                    <Image
+                      src={project2}
+                      alt="Proyecto1"
+                      width={208}
+                      height={128}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                </div>
+                <div className="space-y-4 translate-y-14 ">
+                  <div className="w-52 h-32">
+                    <Image
+                      src={project3}
+                      alt="Proyecto1"
+                      width={208}
+                      height={128}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className="flex justify-start items-start">
+                    <Image
+                      src={project4}
+                      alt="Proyecto1"
+                      width={140}
+                      height={90}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex mb-24">
+              <div className="  mb-4 flex space-x-4  w-1/2 justify-center">
+                <div className="space-y-4 ">
+                  <div className="flex justify-end items-end">
+                    <Image
+                      src={project1}
+                      alt="Proyecto1"
+                      width={140}
+                      height={90}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className="w-52 h-32">
+                    <Image
+                      src={project2}
+                      alt="Proyecto1"
+                      width={208}
+                      height={128}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                </div>
+                <div className="space-y-4 translate-y-14 ">
+                  <div className="w-52 h-32">
+                    <Image
+                      src={project3}
+                      alt="Proyecto1"
+                      width={208}
+                      height={128}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className="flex justify-start items-start">
+                    <Image
+                      src={project4}
+                      alt="Proyecto1"
+                      width={140}
+                      height={90}
+                      className="rounded-md"
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="w-1/2 translate-y-14 flex flex-col justify-center items-end">
+                <span className="font-serif font-bold text-4xl text-gray-600">
+                  IIII
+                </span>
+                <div className="flex flex-col justify-center items-end">
+                  <div className="flex items-center space-x-2 mb-4">
+                  <span className="font-medium text-xs text-neutral-400">
+                      PRIVADO
+                    </span>
+                    <h6 className="font-medium text-xl text-red-500 ">
+                      PALTARUMI S.A.C.
+                    </h6>
+
+                  </div>
+                  <p className="text-base text-white w-11/12 mb-5 text-right">
+                    Obras Civiles (Estructuras para Tanques - Construcción de
+                    Oficinas – Dormitorios –Campamentos–Laboratorios)
+                  </p>
+
+                  <span className="text-neutral-500">Paramonga - Lima</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -154,10 +462,7 @@ export default function Home() {
                 />
               </div>
               <div>
-              <ModalImage
-                  small="assets/SCE.png"
-                  large="assets/SCE.png"
-                />
+                <ModalImage small="assets/SCE.png" large="assets/SCE.png" />
               </div>
             </div>
           </div>

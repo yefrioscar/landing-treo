@@ -14,10 +14,34 @@ import ModalImage, { Lightbox } from "react-modal-image";
 const SLIDE_COUNT = 3;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
-import project1 from "../public/assets/project-1.png";
-import project2 from "../public/assets/project-2.png";
-import project3 from "../public/assets/project-3.png";
-import project4 from "../public/assets/project-4.png";
+// import project1 from "../public/assets/project-1.png";
+// import project2 from "../public/assets/project-2.png";
+// import project3 from "../public/assets/project-3.png";
+// import project4 from "../public/assets/project-4.png";
+
+import project1 from "../public/assets/project1/1.jpeg";
+import project2 from "../public/assets/project1/2.jpeg";
+import project3 from "../public/assets/project1/3.jpeg";
+import project4 from "../public/assets/project1/4.jpeg";
+import project5 from "../public/assets/project1/5.jpeg";
+
+import project21 from "../public/assets/project2/1.jpeg";
+import project22 from "../public/assets/project2/2.jpeg";
+import project23 from "../public/assets/project2/3.jpeg";
+import project24 from "../public/assets/project2/4.jpeg";
+import project25 from "../public/assets/project2/5.jpeg";
+
+import project31 from "../public/assets/project3/1.jpeg";
+import project32 from "../public/assets/project3/2.jpeg";
+import project33 from "../public/assets/project3/3.jpeg";
+import project34 from "../public/assets/project3/4.jpeg";
+import project35 from "../public/assets/project3/5.jpeg";
+
+import project41 from "../public/assets/project4/1.jpeg";
+import project42 from "../public/assets/project4/2.jpeg";
+import project43 from "../public/assets/project4/3.jpeg";
+import project44 from "../public/assets/project4/4.jpeg";
+import project45 from "../public/assets/project4/5.jpeg";
 
 export default function Home() {
   const [isSSR, setIsSSR] = useState(true);
@@ -162,24 +186,24 @@ export default function Home() {
             {/* <Gallery /> */}
             <div className="flex mb-24">
               <div className="w-1/2 translate-y-14">
-                <span className="font-serif font-bold text-4xl text-gray-600">
+                <span className="font-serif font-bold text-4xl text-red-500">
                   I
                 </span>
                 <div>
                   <div className="flex items-center space-x-2 mb-4">
-                    <h6 className="font-medium text-xl text-red-500">
+                    {/* <h6 className="font-medium text-xl text-red-500">
                       PALTARUMI S.A.C.
                     </h6>
                     <span className="font-medium text-xs text-neutral-400">
                       PRIVADO
-                    </span>
+                    </span> */}
                   </div>
                   <p className="text-base text-white w-11/12 mb-5">
-                    Obras Civiles (Estructuras para Tanques - Construcción de
-                    Oficinas – Dormitorios –Campamentos–Laboratorios)
+                    Relavera de Lixiviación - Relavera de Polimetálicos -
+                    Recrecimiento de Relavera de Lixiviación
                   </p>
 
-                  <span className="text-neutral-500">Paramonga - Lima</span>
+                  {/* <span className="text-neutral-500">Paramonga - Lima</span> */}
                 </div>
               </div>
 
@@ -192,7 +216,8 @@ export default function Home() {
                       width={140}
                       height={90}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      placeholder="blur"
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                   <div className="w-52 h-32">
@@ -202,7 +227,19 @@ export default function Home() {
                       width={208}
                       height={128}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      placeholder="blur"
+                      objectFit="cover" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className=" flex justify-end items-end ">
+                    <Image
+                      src={project5}
+                      alt="Proyecto1"
+                      width={176}
+                      height={96}
+                      className="rounded-md"
+                      placeholder="blur"
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                 </div>
@@ -214,7 +251,8 @@ export default function Home() {
                       width={208}
                       height={128}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      placeholder="blur"
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                   <div className="flex justify-start items-start">
@@ -224,7 +262,8 @@ export default function Home() {
                       width={140}
                       height={90}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      placeholder="blur"
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                 </div>
@@ -236,92 +275,102 @@ export default function Home() {
                 <div className="space-y-4 ">
                   <div className="flex justify-end items-end">
                     <Image
-                      src={project1}
+                      src={project21}
                       alt="Proyecto1"
                       width={140}
                       height={90}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                   <div className="w-52 h-32">
                     <Image
-                      src={project2}
+                      src={project22}
                       alt="Proyecto1"
                       width={208}
                       height={128}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      layout="responsive"
+                      objectFit="cover" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className=" flex justify-end items-end">
+                    <Image
+                      src={project25}
+                      alt="Proyecto1"
+                      width={176}
+                      height={96}
+                      className="rounded-md"
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                 </div>
                 <div className="space-y-4 translate-y-14 ">
                   <div className="w-52 h-32">
                     <Image
-                      src={project3}
+                      src={project23}
                       alt="Proyecto1"
                       width={208}
                       height={128}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      layout="responsive"
+                      objectFit="cover"// Optional blur-up while loading
                     />
                   </div>
                   <div className="flex justify-start items-start">
                     <Image
-                      src={project4}
+                      src={project24}
                       alt="Proyecto1"
                       width={140}
                       height={90}
                       className="rounded-md"
                       placeholder="blur" // Optional blur-up while loading
+                      objectFit="cover"
                     />
                   </div>
                 </div>
               </div>
               <div className="w-1/2 translate-y-14 flex flex-col justify-center items-end">
-                <span className="font-serif font-bold text-4xl text-gray-600">
+                <span className="font-serif font-bold text-4xl text-red-500">
                   II
                 </span>
                 <div className="flex flex-col justify-center items-end">
                   <div className="flex items-center space-x-2 mb-4">
-                  <span className="font-medium text-xs text-neutral-400">
+                    {/* <span className="font-medium text-xs text-neutral-400">
                       PRIVADO
                     </span>
                     <h6 className="font-medium text-xl text-red-500 ">
                       PALTARUMI S.A.C.
-                    </h6>
-
+                    </h6> */}
                   </div>
                   <p className="text-base text-white w-11/12 mb-5 text-right">
-                    Obras Civiles (Estructuras para Tanques - Construcción de
-                    Oficinas – Dormitorios –Campamentos–Laboratorios)
+                   Obras Civiles (Estructuras para Tanques - Construcción de Oficinas – Dormitorios – Campamentos – Laboratorios)
                   </p>
 
-                  <span className="text-neutral-500">Paramonga - Lima</span>
+                  {/* <span className="text-neutral-500">Paramonga - Lima</span> */}
                 </div>
               </div>
             </div>
 
             <div className="flex mb-24">
               <div className="w-1/2 translate-y-14">
-                <span className="font-serif font-bold text-4xl text-gray-600">
+                <span className="font-serif font-bold text-4xl text-red-500">
                   III
                 </span>
                 <div>
                   <div className="flex items-center space-x-2 mb-4">
-                    <h6 className="font-medium text-xl text-red-500">
+                    {/* <h6 className="font-medium text-xl text-red-500">
                       PALTARUMI S.A.C.
                     </h6>
                     <span className="font-medium text-xs text-neutral-400">
                       PRIVADO
-                    </span>
+                    </span> */}
                   </div>
                   <p className="text-base text-white w-11/12 mb-5">
-                    Obras Civiles (Estructuras para Tanques - Construcción de
-                    Oficinas – Dormitorios –Campamentos–Laboratorios)
+                  Construcción de vías de acceso a planta y vías interiores con pavimento rígido y flexible de circulación vehicular
                   </p>
 
-                  <span className="text-neutral-500">Paramonga - Lima</span>
+                  {/* <span className="text-neutral-500">Paramonga - Lima</span> */}
                 </div>
               </div>
 
@@ -329,44 +378,59 @@ export default function Home() {
                 <div className="space-y-4 ">
                   <div className="flex justify-end items-end">
                     <Image
-                      src={project1}
+                      src={project31}
                       alt="Proyecto1"
                       width={140}
                       height={90}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      placeholder="blur"
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                   <div className="w-52 h-32">
                     <Image
-                      src={project2}
+                      src={project32}
                       alt="Proyecto1"
                       width={208}
                       height={128}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      placeholder="blur"
+                      objectFit="cover" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className=" flex justify-end items-end ">
+                    <Image
+                      src={project35}
+                      alt="Proyecto1"
+                      width={176}
+                      height={96}
+                      className="rounded-md"
+                      placeholder="blur"
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                 </div>
                 <div className="space-y-4 translate-y-14 ">
                   <div className="w-52 h-32">
                     <Image
-                      src={project3}
+                      src={project33}
                       alt="Proyecto1"
                       width={208}
                       height={128}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      placeholder="blur"
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                   <div className="flex justify-start items-start">
                     <Image
-                      src={project4}
+                      src={project34}
                       alt="Proyecto1"
                       width={140}
                       height={90}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      placeholder="blur"
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                 </div>
@@ -378,68 +442,79 @@ export default function Home() {
                 <div className="space-y-4 ">
                   <div className="flex justify-end items-end">
                     <Image
-                      src={project1}
+                      src={project41}
                       alt="Proyecto1"
                       width={140}
                       height={90}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                   <div className="w-52 h-32">
                     <Image
-                      src={project2}
+                      src={project42}
                       alt="Proyecto1"
                       width={208}
                       height={128}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      layout="responsive"
+                      objectFit="cover" // Optional blur-up while loading
+                    />
+                  </div>
+                  <div className=" flex justify-end items-end">
+                    <Image
+                      src={project45}
+                      alt="Proyecto1"
+                      width={176}
+                      height={96}
+                      className="rounded-md"
+                      objectFit="cover" // Optional blur-up while loading
                     />
                   </div>
                 </div>
                 <div className="space-y-4 translate-y-14 ">
                   <div className="w-52 h-32">
                     <Image
-                      src={project3}
+                      src={project43}
                       alt="Proyecto1"
                       width={208}
                       height={128}
                       className="rounded-md"
-                      placeholder="blur" // Optional blur-up while loading
+                      layout="responsive"
+                      objectFit="cover"// Optional blur-up while loading
                     />
                   </div>
                   <div className="flex justify-start items-start">
                     <Image
-                      src={project4}
+                      src={project44}
                       alt="Proyecto1"
                       width={140}
                       height={90}
                       className="rounded-md"
                       placeholder="blur" // Optional blur-up while loading
+                      objectFit="cover"
                     />
                   </div>
                 </div>
               </div>
               <div className="w-1/2 translate-y-14 flex flex-col justify-center items-end">
-                <span className="font-serif font-bold text-4xl text-gray-600">
-                  IIII
+                <span className="font-serif font-bold text-4xl text-red-500">
+                  II
                 </span>
                 <div className="flex flex-col justify-center items-end">
                   <div className="flex items-center space-x-2 mb-4">
-                  <span className="font-medium text-xs text-neutral-400">
+                    {/* <span className="font-medium text-xs text-neutral-400">
                       PRIVADO
                     </span>
                     <h6 className="font-medium text-xl text-red-500 ">
                       PALTARUMI S.A.C.
-                    </h6>
-
+                    </h6> */}
                   </div>
                   <p className="text-base text-white w-11/12 mb-5 text-right">
-                    Obras Civiles (Estructuras para Tanques - Construcción de
-                    Oficinas – Dormitorios –Campamentos–Laboratorios)
+                  Alcantarillado de aguas Residuales y Saneamiento
                   </p>
 
-                  <span className="text-neutral-500">Paramonga - Lima</span>
+                  {/* <span className="text-neutral-500">Paramonga - Lima</span> */}
                 </div>
               </div>
             </div>
@@ -507,7 +582,7 @@ export default function Home() {
                 Direccion:
               </span>
               <p className="font-medium text-sm mb-4 text-gray-500">
-                Av. Caminos del Inca 244 Off 1302, Surco
+                Av. Caminos del Inca 244 Of 1302, Surco
               </p>
               <span className="font-medium text-lg mb-1 text-gray-700">
                 Telefonos:

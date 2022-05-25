@@ -367,8 +367,9 @@ export default function Home() {
               </div>
 
               <div className="grid gap-4 grid-cols-2 md:hidden">
-                {project1Images.map((item) => (
+                {project1Images.map((item, key) => (
                   <Image
+                    key={key}
                     src={item}
                     alt="Proyecto1"
                     height={400}
@@ -475,9 +476,10 @@ export default function Home() {
               </div>
 
               <div className="grid gap-4 grid-cols-2 md:hidden">
-                {project2Images.map((item) => (
+                {project2Images.map((item, key) => (
                   <Image
                     src={item}
+                    key={key}
                     alt="Proyecto1"
                     height={400}
                     layout="responsive"
@@ -584,9 +586,10 @@ export default function Home() {
               </div>
 
               <div className="grid gap-4 grid-cols-2 md:hidden">
-                {project3Images.map((item) => (
+                {project3Images.map((item, key) => (
                   <Image
                     src={item}
+                    key={key}
                     alt="Proyecto1"
                     height={400}
                     layout="responsive"
@@ -690,8 +693,9 @@ export default function Home() {
               </div>
 
               <div className="grid gap-4 grid-cols-2 md:hidden">
-                {project4Images.map((item) => (
+                {project4Images.map((item, key) => (
                   <Image
+                  key={key}
                     src={item}
                     alt="Proyecto1"
                     height={400}
@@ -800,8 +804,9 @@ export default function Home() {
               </div>
 
               <div className="grid gap-4 grid-cols-2 md:hidden">
-                {project5Images.map((item) => (
+                {project5Images.map((item, key) => (
                   <Image
+                  key={key}
                     src={item}
                     alt="Proyecto1"
                     height={400}

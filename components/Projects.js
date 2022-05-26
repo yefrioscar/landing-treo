@@ -8,6 +8,7 @@ import project3 from "../public/assets/project1/3.jpeg";
 import project4 from "../public/assets/project1/4.jpeg";
 import project5 from "../public/assets/project1/5.jpeg";
 import project6 from "../public/assets/project1/6.jpeg";
+import project7 from "../public/assets/project1/7.jpeg";
 
 import project21 from "../public/assets/project2/1.jpeg";
 import project22 from "../public/assets/project2/2.jpeg";
@@ -22,6 +23,12 @@ import project33 from "../public/assets/project3/3.jpeg";
 import project34 from "../public/assets/project3/4.jpeg";
 import project35 from "../public/assets/project3/5.jpeg";
 import project36 from "../public/assets/project3/6.jpeg";
+import project37 from "../public/assets/project3/7.jpeg";
+import project38 from "../public/assets/project3/8.jpeg";
+import project39 from "../public/assets/project3/9.jpeg";
+import project310 from "../public/assets/project3/10.jpeg";
+import project311 from "../public/assets/project3/11.jpeg";
+import project312 from "../public/assets/project3/12.jpeg";
 
 import project41 from "../public/assets/project4/1.jpeg";
 import project42 from "../public/assets/project4/2.jpeg";
@@ -29,6 +36,11 @@ import project43 from "../public/assets/project4/3.jpeg";
 import project44 from "../public/assets/project4/4.jpeg";
 import project45 from "../public/assets/project4/5.jpeg";
 import project46 from "../public/assets/project4/6.jpeg";
+import project47 from "../public/assets/project4/7.jpeg";
+import project48 from "../public/assets/project4/8.jpeg";
+import project49 from "../public/assets/project4/9.jpeg";
+import project410 from "../public/assets/project4/10.jpeg";
+import project411 from "../public/assets/project4/11.jpeg";
 
 import project51 from "../public/assets/project5/1.jpeg";
 import project52 from "../public/assets/project5/2.jpeg";
@@ -36,6 +48,12 @@ import project53 from "../public/assets/project5/3.jpeg";
 import project54 from "../public/assets/project5/4.jpeg";
 import project55 from "../public/assets/project5/5.jpeg";
 import project56 from "../public/assets/project5/6.jpeg";
+import project57 from "../public/assets/project5/7.jpeg";
+import project58 from "../public/assets/project5/8.jpeg";
+import project59 from "../public/assets/project5/9.jpeg";
+import project510 from "../public/assets/project5/10.jpeg";
+import project511 from "../public/assets/project5/11.jpeg";
+import project512 from "../public/assets/project5/12.jpeg";
 
 const Projects = () => {
   const [open, setOpen] = useState(false);
@@ -57,6 +75,7 @@ const Projects = () => {
     project4,
     project5,
     project6,
+    project7,
   ];
 
   const project2Images = [
@@ -75,6 +94,12 @@ const Projects = () => {
     project34,
     project35,
     project36,
+    project37,
+    project38,
+    project39,
+    project310,
+    project311,
+    project312,
   ];
 
   const project4Images = [
@@ -84,6 +109,11 @@ const Projects = () => {
     project44,
     project45,
     project46,
+    project47,
+    project48,
+    project49,
+    project410,
+    project411
   ];
 
   const project5Images = [
@@ -93,6 +123,12 @@ const Projects = () => {
     project54,
     project55,
     project56,
+    project57,
+    project58,
+    project59,
+    project510,
+    project511,
+    project512,
   ];
 
   return (
@@ -139,32 +175,20 @@ const Projects = () => {
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className=" flex justify-center md:justify-end">
-              <Image
-                src={project3}
-                alt="Proyecto1"
-                width={176}
-                height={96}
-                className="rounded-md"
-                placeholder="blur"
-                onClick={() => openLightbox(project3.src)}
-                objectFit="cover" // Optional blur-up while loading
-              />
-            </div>
-            <div className=" flex justify-center md:justify-end">
-              <Image
-                src={project3}
-                alt="Proyecto1"
-                width={176}
-                height={96}
-                className="rounded-md"
-                placeholder="blur"
-                onClick={() => openLightbox(project3.src)}
-                objectFit="cover" // Optional blur-up while loading
-              />
-            </div>
           </div>
           <div className="space-y-4 -translate-y-10 md:hidden lg:block">
+            <div className="flex justify-start items-start">
+              <Image
+                src={project3}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project3.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
             <div className="flex justify-start items-start">
               <Image
                 src={project4}
@@ -173,8 +197,8 @@ const Projects = () => {
                 height={90}
                 className="rounded-md"
                 placeholder="blur"
-                onClick={() => openLightbox(project4.src)}
                 objectFit="cover" // Optional blur-up while loading
+                onClick={() => openLightbox(project4.src)}
               />
             </div>
             <div className="flex justify-start items-start">
@@ -185,31 +209,7 @@ const Projects = () => {
                 height={90}
                 className="rounded-md"
                 placeholder="blur"
-                objectFit="cover" // Optional blur-up while loading
                 onClick={() => openLightbox(project5.src)}
-              />
-            </div>
-            <div className="flex justify-start items-start">
-              <Image
-                src={project6}
-                alt="Proyecto1"
-                width={140}
-                height={90}
-                className="rounded-md"
-                placeholder="blur"
-                onClick={() => openLightbox(project6.src)}
-                objectFit="cover" // Optional blur-up while loading
-              />
-            </div>
-            <div className="flex justify-start items-start">
-              <Image
-                src={project6}
-                alt="Proyecto1"
-                width={140}
-                height={90}
-                className="rounded-md"
-                placeholder="blur"
-                onClick={() => openLightbox(project6.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
@@ -217,50 +217,26 @@ const Projects = () => {
           <div className="space-y-4 translate-y-10 ">
             <div className="flex justify-start items-start">
               <Image
-                src={project4}
+                src={project6}
                 alt="Proyecto1"
                 width={176}
                 height={96}
                 className="rounded-md"
                 placeholder="blur"
-                onClick={() => openLightbox(project4.src)}
+                onClick={() => openLightbox(project6.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
 
             <div className="flex justify-start items-start">
               <Image
-                src={project6}
+                src={project7}
                 alt="Proyecto1"
                 width={176}
                 height={96}
                 className="rounded-md"
                 placeholder="blur"
-                onClick={() => openLightbox(project6.src)}
-                objectFit="cover" // Optional blur-up while loading
-              />
-            </div>
-            <div className="w-52 h-32">
-              <Image
-                src={project5}
-                alt="Proyecto1"
-                width={208}
-                height={128}
-                className="rounded-md"
-                placeholder="blur"
-                objectFit="cover" // Optional blur-up while loading
-                onClick={() => openLightbox(project5.src)}
-              />
-            </div>
-            <div className="flex justify-start items-start">
-              <Image
-                src={project6}
-                alt="Proyecto1"
-                width={140}
-                height={90}
-                className="rounded-md"
-                placeholder="blur"
-                onClick={() => openLightbox(project6.src)}
+                onClick={() => openLightbox(project7.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
@@ -285,44 +261,46 @@ const Projects = () => {
       </div>
 
       <div className="flex mb-24 flex-col md:flex-row">
-        <div className="hidden mb-4 md:flex space-x-4  w-1/2 justify-center">
-          <div className="space-y-4 ">
-            <div className="flex justify-end items-end">
+        <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
+          <div className="space-y-4 flex md:flex-col flex-row">
+            <div className="flex justify-center md:justify-end">
               <Image
                 src={project21}
                 alt="Proyecto1"
                 width={140}
                 height={90}
                 className="rounded-md"
+                placeholder="blur"
                 onClick={() => openLightbox(project21.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className="w-52 h-32">
+            <div className="md:w-52 h-32 flex justify-center">
               <Image
                 src={project22}
                 alt="Proyecto1"
                 width={208}
                 height={128}
                 className="rounded-md"
-                layout="responsive"
+                placeholder="blur"
                 onClick={() => openLightbox(project22.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className=" flex justify-end items-end">
+          </div>
+          <div className="space-y-4 -translate-y-10 md:hidden lg:block">
+            <div className="flex justify-start items-start">
               <Image
                 src={project23}
                 alt="Proyecto1"
-                width={176}
-                height={96}
+                width={140}
+                height={90}
                 className="rounded-md"
+                placeholder="blur"
                 onClick={() => openLightbox(project23.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-          </div>
-          <div className="space-y-4 translate-y-14 ">
             <div className="flex justify-start items-start">
               <Image
                 src={project24}
@@ -330,37 +308,41 @@ const Projects = () => {
                 width={140}
                 height={90}
                 className="rounded-md"
+                placeholder="blur"
+                objectFit="cover" // Optional blur-up while loading
                 onClick={() => openLightbox(project24.src)}
-                placeholder="blur" // Optional blur-up while loading
-                objectFit="cover"
               />
             </div>
-            <div className="w-52 h-32">
+          </div>
+          <div className="space-y-4 translate-y-10 ">
+            <div className="flex justify-start items-start">
               <Image
                 src={project25}
                 alt="Proyecto1"
-                width={208}
-                height={128}
+                width={176}
+                height={96}
                 className="rounded-md"
-                layout="responsive"
+                placeholder="blur"
                 onClick={() => openLightbox(project25.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
+
             <div className="flex justify-start items-start">
               <Image
                 src={project26}
                 alt="Proyecto1"
-                width={140}
-                height={90}
+                width={176}
+                height={96}
                 className="rounded-md"
+                placeholder="blur"
                 onClick={() => openLightbox(project26.src)}
-                placeholder="blur" // Optional blur-up while loading
-                objectFit="cover"
+                objectFit="cover" // Optional blur-up while loading
               />
             </div>
           </div>
         </div>
+
         <div className="md:w-1/2 md:translate-y-14 flex flex-col justify-center items-end">
           <span className="font-serif font-bold text-4xl text-red-500">II</span>
           <div className="flex flex-col justify-center items-end">
@@ -405,9 +387,9 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="hidden mb-4 md:flex space-x-4  w-1/2 justify-center">
-          <div className="space-y-4 ">
-            <div className="flex justify-end items-end">
+        <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
+          <div className="space-y-4 flex md:flex-col flex-row">
+            <div className="flex justify-center md:justify-end">
               <Image
                 src={project31}
                 alt="Proyecto1"
@@ -419,7 +401,7 @@ const Projects = () => {
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className="w-52 h-32">
+            <div className="md:w-52 h-32 flex justify-center">
               <Image
                 src={project32}
                 alt="Proyecto1"
@@ -431,7 +413,7 @@ const Projects = () => {
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className=" flex justify-end items-end ">
+            <div className=" flex justify-center md:justify-end">
               <Image
                 src={project33}
                 alt="Proyecto1"
@@ -443,26 +425,26 @@ const Projects = () => {
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-          </div>
-          <div className="space-y-4 translate-y-14 ">
-            <div className="flex justify-start items-start">
+            <div className=" flex justify-center md:justify-end">
               <Image
                 src={project34}
                 alt="Proyecto1"
-                width={140}
-                height={90}
+                width={176}
+                height={96}
                 className="rounded-md"
                 placeholder="blur"
                 onClick={() => openLightbox(project34.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className="w-52 h-32">
+          </div>
+          <div className="space-y-4 -translate-y-10 md:hidden lg:block">
+            <div className="flex justify-start items-start">
               <Image
                 src={project35}
                 alt="Proyecto1"
-                width={208}
-                height={128}
+                width={140}
+                height={90}
                 className="rounded-md"
                 placeholder="blur"
                 onClick={() => openLightbox(project35.src)}
@@ -477,7 +459,82 @@ const Projects = () => {
                 height={90}
                 className="rounded-md"
                 placeholder="blur"
+                objectFit="cover" // Optional blur-up while loading
                 onClick={() => openLightbox(project36.src)}
+              />
+            </div>
+            <div className="flex justify-start items-start">
+              <Image
+                src={project37}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project37.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+            <div className="flex justify-start items-start">
+              <Image
+                src={project38}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project38.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+          </div>
+          <div className="space-y-4 translate-y-10 ">
+            <div className="flex justify-start items-start">
+              <Image
+                src={project39}
+                alt="Proyecto1"
+                width={176}
+                height={96}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project39.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+
+            <div className="flex justify-start items-start">
+              <Image
+                src={project310}
+                alt="Proyecto1"
+                width={176}
+                height={96}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project310.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+            <div className="w-52 h-32">
+              <Image
+                src={project311}
+                alt="Proyecto1"
+                width={208}
+                height={128}
+                className="rounded-md"
+                placeholder="blur"
+                objectFit="cover" // Optional blur-up while loading
+                onClick={() => openLightbox(project311.src)}
+              />
+            </div>
+            <div className="flex justify-start items-start">
+              <Image
+                src={project312}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project312.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
@@ -502,64 +559,66 @@ const Projects = () => {
       </div>
 
       <div className="flex mb-24 flex-col md:flex-row">
-        <div className="hidden  mb-4 md:flex space-x-4  w-1/2 justify-center">
-          <div className="space-y-4 ">
-            <div className="flex justify-end items-end">
+        <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
+          <div className="space-y-4 flex md:flex-col flex-row">
+            <div className="flex justify-center md:justify-end">
               <Image
                 src={project41}
                 alt="Proyecto1"
                 width={140}
                 height={90}
                 className="rounded-md"
+                placeholder="blur"
                 onClick={() => openLightbox(project41.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className="w-52 h-32">
+            <div className="md:w-52 h-32 flex justify-center">
               <Image
                 src={project42}
                 alt="Proyecto1"
                 width={208}
                 height={128}
                 className="rounded-md"
-                layout="responsive"
+                placeholder="blur"
                 onClick={() => openLightbox(project42.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className=" flex justify-end items-end">
+            <div className=" flex justify-center md:justify-end">
               <Image
                 src={project43}
                 alt="Proyecto1"
                 width={176}
                 height={96}
                 className="rounded-md"
+                placeholder="blur"
                 onClick={() => openLightbox(project43.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-          </div>
-          <div className="space-y-4 translate-y-14 ">
-            <div className="flex justify-start items-start">
+            <div className=" flex justify-center md:justify-end">
               <Image
                 src={project44}
+                alt="Proyecto1"
+                width={176}
+                height={96}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project44.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+          </div>
+          <div className="space-y-4 -translate-y-10 md:hidden lg:block">
+            <div className="flex justify-start items-start">
+              <Image
+                src={project45}
                 alt="Proyecto1"
                 width={140}
                 height={90}
                 className="rounded-md"
-                onClick={() => openLightbox(project44.src)}
-                placeholder="blur" // Optional blur-up while loading
-                objectFit="cover"
-              />
-            </div>
-            <div className="w-52 h-32">
-              <Image
-                src={project45}
-                alt="Proyecto1"
-                width={208}
-                height={128}
-                className="rounded-md"
-                layout="responsive"
+                placeholder="blur"
                 onClick={() => openLightbox(project45.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
@@ -571,13 +630,77 @@ const Projects = () => {
                 width={140}
                 height={90}
                 className="rounded-md"
-                placeholder="blur" // Optional blur-up while loading
-                objectFit="cover"
+                placeholder="blur"
+                objectFit="cover" // Optional blur-up while loading
                 onClick={() => openLightbox(project46.src)}
+              />
+            </div>
+            <div className="flex justify-start items-start">
+              <Image
+                src={project47}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project47.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+            <div className="flex justify-start items-start">
+              <Image
+                src={project48}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project48.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+          </div>
+          <div className="space-y-4 translate-y-10 ">
+            <div className="flex justify-start items-start">
+              <Image
+                src={project49}
+                alt="Proyecto1"
+                width={176}
+                height={96}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project49.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+
+            <div className="flex justify-start items-start">
+              <Image
+                src={project410}
+                alt="Proyecto1"
+                width={176}
+                height={96}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project410.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+            <div className="w-52 h-32">
+              <Image
+                src={project411}
+                alt="Proyecto1"
+                width={208}
+                height={128}
+                className="rounded-md"
+                placeholder="blur"
+                objectFit="cover" // Optional blur-up while loading
+                onClick={() => openLightbox(project411.src)}
               />
             </div>
           </div>
         </div>
+
         <div className="md:w-1/2 md:translate-y-14 flex flex-col justify-center items-end">
           <span className="font-serif font-bold text-4xl text-red-500">IV</span>
           <div className="flex flex-col justify-center items-end">
@@ -618,9 +741,10 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="hidden mb-4 md:flex space-x-4  w-1/2 justify-center">
-          <div className="space-y-4 ">
-            <div className="flex justify-end items-end">
+
+        <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
+          <div className="space-y-4 flex md:flex-col flex-row">
+            <div className="flex justify-center md:justify-end">
               <Image
                 src={project51}
                 alt="Proyecto1"
@@ -632,7 +756,7 @@ const Projects = () => {
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className="w-52 h-32">
+            <div className="md:w-52 h-32 flex justify-center">
               <Image
                 src={project52}
                 alt="Proyecto1"
@@ -644,7 +768,7 @@ const Projects = () => {
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className=" flex justify-end items-end ">
+            <div className=" flex justify-center md:justify-end">
               <Image
                 src={project53}
                 alt="Proyecto1"
@@ -656,26 +780,26 @@ const Projects = () => {
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-          </div>
-          <div className="space-y-4 translate-y-14 ">
-            <div className="flex justify-start items-start">
+            <div className=" flex justify-center md:justify-end">
               <Image
                 src={project54}
                 alt="Proyecto1"
-                width={140}
-                height={90}
+                width={176}
+                height={96}
                 className="rounded-md"
                 placeholder="blur"
                 onClick={() => openLightbox(project54.src)}
                 objectFit="cover" // Optional blur-up while loading
               />
             </div>
-            <div className="w-52 h-32">
+          </div>
+          <div className="space-y-4 -translate-y-10 md:hidden lg:block">
+            <div className="flex justify-start items-start">
               <Image
                 src={project55}
                 alt="Proyecto1"
-                width={208}
-                height={128}
+                width={140}
+                height={90}
                 className="rounded-md"
                 placeholder="blur"
                 onClick={() => openLightbox(project55.src)}
@@ -690,8 +814,83 @@ const Projects = () => {
                 height={90}
                 className="rounded-md"
                 placeholder="blur"
-                onClick={() => openLightbox(project56.src)}
                 objectFit="cover" // Optional blur-up while loading
+                onClick={() => openLightbox(project56.src)}
+              />
+            </div>
+            <div className="flex justify-start items-start">
+              <Image
+                src={project57}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project57.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+            <div className="flex justify-start items-start">
+              <Image
+                src={project58}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project58.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+          </div>
+          <div className="space-y-4 translate-y-10 ">
+            <div className="flex justify-start items-start">
+              <Image
+                src={project59}
+                alt="Proyecto1"
+                width={176}
+                height={96}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project59.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+
+            <div className="flex justify-start items-start">
+              <Image
+                src={project510}
+                alt="Proyecto1"
+                width={176}
+                height={96}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project510.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+            <div className="w-52 h-32">
+              <Image
+                src={project511}
+                alt="Proyecto1"
+                width={208}
+                height={128}
+                className="rounded-md"
+                placeholder="blur"
+                objectFit="cover" // Optional blur-up while loading
+                onClick={() => openLightbox(project511.src)}
+              />
+            </div>
+            <div className="w-52 h-32">
+              <Image
+                src={project512}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                objectFit="cover" // Optional blur-up while loading
+                onClick={() => openLightbox(project512.src)}
               />
             </div>
           </div>

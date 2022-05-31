@@ -37,7 +37,7 @@ const Carrousel = ({ slides }) => {
                 />
               </div>
               <div className="absolute top-0 left-0 ml-3 bg-gradient-to-r from-black w-full h-full p-4 flex items-center">
-                <p className="text-white font-bold text-base md:text-2xl">
+                <p className="text-white font-bold text-base md:text-2xl text-center">
                  Obras Civiles y Edificaciones Completas <br></br> Movimiento de Tierras, Habilitación Urbana y Explotación de Minas y Canteras <br></br> Construcción de Vías con pavimento rígido y flexible para circulación vehicular <br></br>
                 </p>
 

@@ -23,7 +23,6 @@ import Projects from "../components/Projects";
 export default function Home() {
   const [isSSR, setIsSSR] = useState(true);
 
-
   useEffect(() => {
     setIsSSR(false);
   }, []);
@@ -36,8 +35,6 @@ export default function Home() {
       origin: "http://localhost:3000/",
     },
   };
-
-
 
   const listClients = [
     {
@@ -138,17 +135,29 @@ export default function Home() {
                   Que servicios brindamos?
                 </h2>
                 <ul className=" list-inside list-disc text-white accord-content">
-                  <li>Explotación de Minas y Canteras.</li>
+                  <li>
+                    Obras Civiles: (Platea de cimentación para tanques 30 x 30
+                    en Planta de Lixiviación - Construcción de Oficinas -
+                    Dormitorios - Campamentos - Laboratorios - Construcción de
+                    Sistema de Eductores - Plataforma en Desorción)
+                  </li>
+                  <li>Movimiento de Tierras.</li>
+                  <li>Desarrollo y explotación de Minas y Canteras.</li>
+                  <li>
+                    Diseño y construcción de:
+                    <ul className="list-inside list-disc text-white pl-4">
+                      <li>Locales Comerciales</li>
+                      <li>Locales Industriales</li>
+                    </ul>
+                  </li>
+
                   <li>
                     Encauzamiento de ríos; habilitación de laderas y enrocados.
                   </li>
-                  <li>Movimiento de Tierras.</li>
                   <li>
-                    Proyección y Construcción de locales Comerciales, de recreo
-                    o uso Mixto.
+                    Construcción de vías de acceso a planta y vías interiores
+                    con pavimento rígido y flexible de circulación vehicular
                   </li>
-                  <li>Obras Civiles.</li>
-                  <li>Compra y Venta de materiales de construcción.</li>
                 </ul>
               </div>
             </div>
@@ -224,7 +233,9 @@ export default function Home() {
                       placeholder="blur" // Optional blur-up while loading
                     />
                   </div>
-                  <span className="font-medium mt-4 text-center">{item.title}</span>
+                  <span className="font-medium mt-4 text-center">
+                    {item.title}
+                  </span>
                 </div>
               ))}
             </div>
@@ -270,7 +281,7 @@ export default function Home() {
                 Direccion:
               </span>
               <p className="font-medium text-sm mb-4 text-gray-500">
-              Oficinas: Av. Caminos del Inca 244, Of 1302, Santiago de Surco
+                Oficinas: Av. Caminos del Inca 244, Of 1302, Santiago de Surco
               </p>
               <span className="font-medium text-lg mb-1 text-gray-700">
                 Telefonos:

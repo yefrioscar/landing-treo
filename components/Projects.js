@@ -135,7 +135,7 @@ const Projects = () => {
           <span className="font-serif font-bold text-4xl text-red-500">I</span>
           <div>
             <div className="flex items-center space-x-2 mb-4"></div>
-            <p className="text-base text-white w-11/12 mb-5">
+            <p className="text-base text-white w-11/12 mb-5 text-center">
               Relavera de Lixiviación - Relavera de Polimetálicos -
               Recrecimiento de Relavera de Lixiviación
             </p>
@@ -327,7 +327,7 @@ const Projects = () => {
           <span className="font-serif font-bold text-4xl text-red-500">II</span>
           <div className="flex flex-col justify-center items-end">
             <div className="flex items-center space-x-2 mb-4"></div>
-            <p className="text-base text-white w-11/12 mb-5 text-right">
+            <p className="text-base text-white w-11/12 mb-5 text-center">
               Obras Civiles (Platea de cimentación para tanques 30 x 30 en
               Planta de Lixiviación - Construcción de Oficinas - Dormitorios -
               Campamentos - Laboratorios - Construcción de Sistema de Eductores
@@ -360,7 +360,7 @@ const Projects = () => {
           </span>
           <div>
             <div className="flex items-center space-x-2 mb-4"></div>
-            <p className="text-base text-white w-11/12 mb-5">
+            <p className="text-base text-white w-11/12 mb-5 text-center">
               Construcción de vías de acceso a planta y vías interiores con
               pavimento rígido y flexible de circulación vehicular
             </p>
@@ -649,7 +649,7 @@ const Projects = () => {
           <span className="font-serif font-bold text-4xl text-red-500">IV</span>
           <div className="flex flex-col justify-center items-end">
             <div className="flex items-center space-x-2 mb-4"></div>
-            <p className="text-base text-white w-11/12 mb-5 text-right">
+            <p className="text-base text-white w-11/12 mb-5 text-center">
               Alcantarillado de aguas Residuales y Saneamiento
             </p>
           </div>
@@ -677,7 +677,7 @@ const Projects = () => {
           <span className="font-serif font-bold text-4xl text-red-500">V</span>
           <div>
             <div className="flex items-center space-x-2 mb-4"></div>
-            <p className="text-base text-white w-11/12 mb-5">
+            <p className="text-base text-white w-11/12 mb-5 text-center">
               Otros Proyectos (Construcción de Estructura Metálico de Planta de
               Cal y Planta de Reactivos - Muros y Escaleras - Construcción de
               Campamentos Mineros)

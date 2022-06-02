@@ -136,13 +136,104 @@ const Projects = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4"></div>
             <p className="text-base text-white w-11/12 mb-5 text-center">
-              Relavera de Lixiviación - Relavera de Polimetálicos -
-              Recrecimiento de Relavera de Lixiviación
+              Obras Civiles (Platea de cimentación para tanques 30 x 30 en
+              Planta de Lixiviación - Construcción de Oficinas - Dormitorios -
+              Campamentos - Laboratorios - Construcción de Sistema de Eductores
+              - Plataforma en Desorción)
             </p>
           </div>
         </div>
 
+
+
         <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
+          <div className="space-y-4 flex md:flex-col flex-row">
+            <div className="flex justify-center md:justify-end">
+              <Image
+                src={project21}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project21.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+            <div className="md:w-52 h-32 flex justify-center">
+              <Image
+                src={project22}
+                alt="Proyecto1"
+                width={208}
+                height={128}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project22.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+          </div>
+          <div className="space-y-4 -translate-y-10 md:hidden lg:block">
+            <div className="flex justify-start items-start">
+              <Image
+                src={project23}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project23.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+            <div className="flex justify-start items-start">
+              <Image
+                src={project24}
+                alt="Proyecto1"
+                width={140}
+                height={90}
+                className="rounded-md"
+                placeholder="blur"
+                objectFit="cover" // Optional blur-up while loading
+                onClick={() => openLightbox(project24.src)}
+              />
+            </div>
+          </div>
+          <div className="space-y-4 translate-y-10 ">
+            <div className="flex justify-start items-start">
+              <Image
+                src={project25}
+                alt="Proyecto1"
+                width={176}
+                height={96}
+                className="rounded-md"
+                placeholder="blur"
+                onClick={() => openLightbox(project25.src)}
+                objectFit="cover" // Optional blur-up while loading
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="grid gap-4 grid-cols-2 md:hidden">
+          {project2Images.map((item, key) => (
+            <Image
+              src={item}
+              key={key}
+              alt="Proyecto1"
+              height={400}
+              layout="responsive"
+              className="rounded-md"
+              placeholder="blur"
+              onClick={() => openLightbox(item.src)}
+              objectFit="cover" // Optional blur-up while loading
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="flex mb-24 flex-col md:flex-row">
+      <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
           <div className="space-y-4 flex md:flex-col flex-row">
             <div className="flex justify-center md:justify-end">
               <Image
@@ -236,111 +327,23 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="grid gap-4 grid-cols-2 md:hidden">
-          {project1Images.map((item, key) => (
-            <Image
-              key={key}
-              src={item}
-              alt="Proyecto1"
-              height={400}
-              layout="responsive"
-              className="rounded-md"
-              placeholder="blur"
-              onClick={() => openLightbox(item.src)}
-              objectFit="cover" // Optional blur-up while loading
-            />
-          ))}
-        </div>
-      </div>
-
-      <div className="flex mb-24 flex-col md:flex-row">
-        <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
-          <div className="space-y-4 flex md:flex-col flex-row">
-            <div className="flex justify-center md:justify-end">
-              <Image
-                src={project21}
-                alt="Proyecto1"
-                width={140}
-                height={90}
-                className="rounded-md"
-                placeholder="blur"
-                onClick={() => openLightbox(project21.src)}
-                objectFit="cover" // Optional blur-up while loading
-              />
-            </div>
-            <div className="md:w-52 h-32 flex justify-center">
-              <Image
-                src={project22}
-                alt="Proyecto1"
-                width={208}
-                height={128}
-                className="rounded-md"
-                placeholder="blur"
-                onClick={() => openLightbox(project22.src)}
-                objectFit="cover" // Optional blur-up while loading
-              />
-            </div>
-          </div>
-          <div className="space-y-4 -translate-y-10 md:hidden lg:block">
-            <div className="flex justify-start items-start">
-              <Image
-                src={project23}
-                alt="Proyecto1"
-                width={140}
-                height={90}
-                className="rounded-md"
-                placeholder="blur"
-                onClick={() => openLightbox(project23.src)}
-                objectFit="cover" // Optional blur-up while loading
-              />
-            </div>
-            <div className="flex justify-start items-start">
-              <Image
-                src={project24}
-                alt="Proyecto1"
-                width={140}
-                height={90}
-                className="rounded-md"
-                placeholder="blur"
-                objectFit="cover" // Optional blur-up while loading
-                onClick={() => openLightbox(project24.src)}
-              />
-            </div>
-          </div>
-          <div className="space-y-4 translate-y-10 ">
-            <div className="flex justify-start items-start">
-              <Image
-                src={project25}
-                alt="Proyecto1"
-                width={176}
-                height={96}
-                className="rounded-md"
-                placeholder="blur"
-                onClick={() => openLightbox(project25.src)}
-                objectFit="cover" // Optional blur-up while loading
-              />
-            </div>
-          </div>
-        </div>
-
         <div className="md:w-1/2 md:translate-y-14 flex flex-col justify-center items-end">
           <span className="font-serif font-bold text-4xl text-red-500">II</span>
           <div className="flex flex-col justify-center items-end">
             <div className="flex items-center space-x-2 mb-4"></div>
             <p className="text-base text-white w-11/12 mb-5 text-center">
-              Obras Civiles (Platea de cimentación para tanques 30 x 30 en
-              Planta de Lixiviación - Construcción de Oficinas - Dormitorios -
-              Campamentos - Laboratorios - Construcción de Sistema de Eductores
-              - Plataforma en Desorción)
+            Mantenimiento y Protección de Taludes de las Relaveras: <br></br>
+Relavera de Lixiviación - Relavera de Polimetálicos - Recrecimiento de Relavera de
+Lixiviación
             </p>
           </div>
         </div>
 
         <div className="grid gap-4 grid-cols-2 md:hidden">
-          {project2Images.map((item, key) => (
+          {project1Images.map((item, key) => (
             <Image
-              src={item}
               key={key}
+              src={item}
               alt="Proyecto1"
               height={400}
               layout="responsive"

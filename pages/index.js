@@ -282,6 +282,7 @@ export default function Home() {
               </span>
               <p className="font-medium text-sm mb-4 text-gray-500">
                 Oficinas: Av. Caminos del Inca 244, Of 1302, Santiago de Surco
+                Almacen: Palmeras De Villa, Chorrillos 15058
               </p>
               <span className="font-medium text-lg mb-1 text-gray-700">
                 Telefonos:

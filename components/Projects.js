@@ -106,7 +106,7 @@ const Projects = () => {
     project45,
     project46,
     project47,
-    project48
+    project48,
   ];
 
   const project5Images = [
@@ -131,7 +131,7 @@ const Projects = () => {
       )}
 
       <div className="flex mb-24 flex-col md:flex-row">
-        <div className="md:w-1/2 md:translate-y-14">
+        <div className="md:w-1/2 ">
           <span className="font-serif font-bold text-4xl text-red-500">I</span>
           <div>
             <div className="flex items-center space-x-2 mb-4"></div>
@@ -143,8 +143,6 @@ const Projects = () => {
             </p>
           </div>
         </div>
-
-
 
         <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
           <div className="space-y-4 flex md:flex-col flex-row">
@@ -233,7 +231,7 @@ const Projects = () => {
       </div>
 
       <div className="flex mb-24 flex-col md:flex-row">
-      <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
+        <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
           <div className="space-y-4 flex md:flex-col flex-row">
             <div className="flex justify-center md:justify-end">
               <Image
@@ -327,14 +325,14 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="md:w-1/2 md:translate-y-14 flex flex-col justify-center items-end">
+        <div className="md:w-1/2 -translate-y-10 flex flex-col justify-center items-end">
           <span className="font-serif font-bold text-4xl text-red-500">II</span>
           <div className="flex flex-col justify-center items-end">
             <div className="flex items-center space-x-2 mb-4"></div>
             <p className="text-base text-white w-11/12 mb-5 text-center">
-            Mantenimiento y Protección de Taludes de las Relaveras: <br></br>
-Relavera de Lixiviación - Relavera de Polimetálicos - Recrecimiento de Relavera de
-Lixiviación
+              Mantenimiento y Protección de Taludes de las Relaveras: <br></br>
+              Relavera de Lixiviación - Relavera de Polimetálicos -
+              Recrecimiento de Relavera de Lixiviación
             </p>
           </div>
         </div>
@@ -357,7 +355,7 @@ Lixiviación
       </div>
 
       <div className="flex mb-24 flex-col md:flex-row">
-        <div className="md:w-1/2 md:translate-y-14">
+        <div className="md:w-1/2 md:translate-y-32">
           <span className="font-serif font-bold text-4xl text-red-500">
             III
           </span>
@@ -648,7 +646,7 @@ Lixiviación
           </div>
         </div>
 
-        <div className="md:w-1/2 md:translate-y-14 flex flex-col justify-center items-end">
+        <div className="md:w-1/2 -translate-y-4 flex flex-col justify-center items-end">
           <span className="font-serif font-bold text-4xl text-red-500">IV</span>
           <div className="flex flex-col justify-center items-end">
             <div className="flex items-center space-x-2 mb-4"></div>
@@ -676,7 +674,7 @@ Lixiviación
       </div>
 
       <div className="flex mb-24 flex-col md:flex-row">
-        <div className="md:w-1/2 md:translate-y-14">
+        <div className="md:w-1/2 md:translate-y-36">
           <span className="font-serif font-bold text-4xl text-red-500">V</span>
           <div>
             <div className="flex items-center space-x-2 mb-4"></div>
@@ -687,7 +685,6 @@ Lixiviación
             </p>
           </div>
         </div>
-
 
         <div className="hidden md:flex mb-4 flex-col md:flex-row space-x-4 md:w-1/2 justify-center">
           <div className="space-y-4 flex md:flex-col flex-row">

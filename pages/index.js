@@ -213,9 +213,52 @@ export default function Home() {
       </div>
 
       <div className="mb-4">
+        <div className="wrapper-container">
+          <div className="bg-amber-500 rounded-md p-6">
+            <span className="font-medium text-4xl mb-1 text-white">05</span>
+            <h3 className="text-amber-700 font-medium text-xl mb-4">
+              Resolución del Minosterio de Energía u Minas por Contratista Minero - Inversiones Treo SAC
+            </h3>
+            <div className="grid gap-4 grid-cols-1 lg:grid-cols-2">
+              <div>
+                <ModalImage
+                  small="assets/certificado/R.D. N° 902-2022-MINEM-DGM - INF. N° 924-2022-MINEM-DGM-DGES-1.png"
+                  large="assets/certificado/R.D. N° 902-2022-MINEM-DGM - INF. N° 924-2022-MINEM-DGM-DGES-1.png"
+                />
+              </div>
+              <div>
+                <ModalImage
+                  small="assets/certificado/R.D. N° 902-2022-MINEM-DGM - INF. N° 924-2022-MINEM-DGM-DGES-2.png"
+                  large="assets/certificado/R.D. N° 902-2022-MINEM-DGM - INF. N° 924-2022-MINEM-DGM-DGES-2.png"
+                />
+              </div>
+              <div>
+                <ModalImage
+                  small="assets/certificado/R.D. N° 902-2022-MINEM-DGM - INF. N° 924-2022-MINEM-DGM-DGES-3.png"
+                  large="assets/certificado/R.D. N° 902-2022-MINEM-DGM - INF. N° 924-2022-MINEM-DGM-DGES-3.png"
+                />
+              </div>
+              <div>
+                <ModalImage
+                  small="assets/certificado/R.D. N° 902-2022-MINEM-DGM - INF. N° 924-2022-MINEM-DGM-DGES-4.png"
+                  large="assets/certificado/R.D. N° 902-2022-MINEM-DGM - INF. N° 924-2022-MINEM-DGM-DGES-4.png"
+                />
+              </div>
+              <div>
+                <ModalImage
+                  small="assets/certificado/R.D. N° 902-2022-MINEM-DGM - INF. N° 924-2022-MINEM-DGM-DGES-5.png"
+                  large="assets/certificado/R.D. N° 902-2022-MINEM-DGM - INF. N° 924-2022-MINEM-DGM-DGES-5.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-4">
         <div className="bg-white">
           <div className="wrapper-container p-6 pt-4 pb-14">
-            <span className="font-medium text-4xl mb-1 text-slate-500">05</span>
+            <span className="font-medium text-4xl mb-1 text-slate-500">06</span>
             <h3 className="text-slate-700 font-medium text-xl mb-4">
               Nuestros clientes
             </h3>
